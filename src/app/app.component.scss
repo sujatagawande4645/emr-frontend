@@ -1,0 +1,118 @@
+.main-container{
+    width: 100%;
+    height: 85vh;
+    display: grid;
+    grid-template-columns: 220px auto;
+}
+.sidebar-container{
+    width: 100%;
+    background: #ffffff;
+    border-right: 0.5px solid #e0ecff
+
+}
+.top-header-container {
+    width: 100%;
+    height: 60px;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border: none;
+}
+.sg-12{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+.other-container{
+    width: 100%;
+}
+.header-title{
+    font-size: 10px!important;
+    letter-spacing: normal;
+    font-style: italic;
+    letter-spacing: 0.5px;
+}
+
+.logo-container{
+    font-size: 27px;
+    color: #ffffff;
+    letter-spacing: 0.1rem;
+    font-weight: 700;
+}
+.avatar-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 80px;
+}
+.notification-icon{
+    color: #414141;
+    font-size: 20px!important;
+}
+::ng-deep .p-button{
+    width: 25px;
+    height: 25px;
+    background: #ffffff;
+    color: #ffffff;
+    border: 0.5px solid #3b82f6;
+}
+::ng-deep .mat-accordion{
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+}
+::ng-deep .mat-expansion-panel-header{
+    height: 35px!important;
+    background-color: #ffffff;
+    font-size: 12px!important;
+}
+::ng-deep .mat-expansion-panel-header:hover{
+    background-color: #c1c1c1!important;
+}
+::ng-deep .mat-expansion-panel-content{
+    background-color: #ffffff;
+}
+::ng-deep .mat-expansion-panel-spacing{
+    margin: 0px!important;
+}
+::ng-deep .mat-expansion-panel-body{
+    padding: 0px!important;
+}
+.sub-options{
+    color: black!important;
+    font-size: 11px;
+}
+.options{
+   margin-left: 50px;
+   margin-bottom: 5px;
+}
+.options-container:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}
+hr{
+    border: 0.5px solid #f4f8ff!important;
+}
+::ng-deep .pi{
+    color: #3b82f6;
+}
+::ng-deep .nav-icon{
+    margin-right: 10px;
+    font-size: 14px;
+}
+::ng-deep .mat-expansion-indicator{
+    color: #3b82f6;
+}
+::ng-deep .mat-expansion-panel:not([class*=mat-elevation-z]){
+    box-shadow: none!important;
+}
+::ng-deep .mat-expansion-indicator::after{
+    color: #3b82f6!important;
+}
+.nav-options{
+    color: #383838!important;
+}

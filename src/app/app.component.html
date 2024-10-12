@@ -1,0 +1,49 @@
+<div #mainContainer class="main-container">
+    @if (toggleFlag) {
+    <div class="sidebar-container">
+      <mat-accordion>
+        @for (item of sideNavData; track $index) {
+        <mat-expansion-panel
+          (opened)="panelOpenState = true"
+          (closed)="panelOpenState = false"
+        >
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              <i class="{{item.navIcon}} nav-icon"></i>
+              <span class="nav-options">{{item.navName}}</span>
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <div class="sub-options">
+            @for (option of item.options; track $index) {
+              <div class="options-container">
+                <div class="options">{{option}}</div>
+                @if(item.options.length -1 !== $index){
+                  <hr>
+                }
+              </div>  
+            }
+            
+          </div>
+        </mat-expansion-panel>
+        }
+      </mat-accordion>
+    </div>
+    }
+    <div class="other-container">
+      <div #topHeaderContainer class="top-header-container">
+        <div class="sg-12">
+           <p-button class="toggle-btn" (onClick)="onToggle()" icon="pi pi-angle-double-left" /> 
+         </div>
+        <div class="avatar-container">
+          <i class="pi pi-bell notification-icon text-3xl" pBadge value="2"></i>
+          <p-avatar
+            image="https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png"
+            styleClass="mr-2"
+            size="normal"
+            shape="circle"
+          />
+        </div> 
+      </div>
+      <router-outlet></router-outlet>
+    </div>
+  </div>
